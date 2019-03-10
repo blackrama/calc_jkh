@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<link rel="stylesheet" href="style.css">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="calc_wrapper">
+        <div class="calc">
+            <div class="calc_group">
+                <p class="calc_title">Регионы</p>
+                <select name="" id="regions" class="calc_select calc_count-regions">
+                    <option value="0">Адыгея</option>  
+                    <option value="1">Алтай</option>
+                    <option value="2">Алтайский край</option>
+                    <option value="3">Амурская область</option>
+                    <option value="4">Архангельская область</option>
+                    <option value="5">Астраханская область</option>
+                    <option value="6">Башкортостан</option>
+                    <option value="7">Белгородская область</option>
+                    <option value="8">Брянская область</option>
+                    <option value="9">Бурятия</option>
+                    <option value="10">Владимирская область</option>
+                    <option value="11">Волгоградская область</option>
+                    <option value="12">Вологодская область</option>
+                    <option value="13">Воронежская область</option>
+                    <option value="14">Еврейская автономная область</option>
+                    <option value="15">Дагестан</option>
+                    <option value="16">Забайкальский край</option>
+                    <option value="17">Ивановская область</option>
+                    <option value="18">Ингушетия</option>
+                    <option value="19">Иркутская область</option>
+                    <option value="20">Кабардино-Балкария</option>
+                    <option value="21">Калининградская область</option>
+                    <option value="22">Калмыкия</option>
+                    <option value="23">Калужская область</option>
+                    <option value="24">Камчатский край</option>
+                    <option value="25">Карачаево-Черкессия</option>
+                    <option value="26">Карелия</option>
+                    <option value="27">Кемеровская область</option>
+                    <option value="28">Кировская область</option>
+                    <option value="29">Коми</option>
+                    <option value="30">Красноярский край</option>
+                    <option value="31">Костромская область</option>
+                    <option value="32">Краснодарский край</option>
+                    <option value="33">Крым</option>
+                    <option value="34">Курганская область</option>
+                    <option value="35">Курская область</option>
+                    <option value="36">Ленинградская область</option>
+                    <option value="37">Липецкая область</option>
+                    <option value="38">Магаданская область</option>
+                    <option value="39">Марий Эл</option>
+                    <option value="40">Мордовия</option>
+                    <option value="41">Москва</option>
+                    <option value="42">Московская область</option>
+                    <option value="43">Мурманская область</option>
+                    <option value="44">Ненецкий АО</option>
+                    <option value="45">Нижегородская область</option>
+                    <option value="46">Новгородская область</option>
+                    <option value="47">Новосибирская область</option>
+                    <option value="48">Омская область</option>
+                    <option value="49">Оренбургская область</option>
+                    <option value="50">Орловская область</option>
+                    <option value="51">Пензенская область</option>
+                    <option value="52">Пермский край</option>
+                    <option value="53">Приморский край</option>
+                    <option value="54">Псковская область</option>
+                    <option value="55">Ростовская область</option>
+                    <option value="56">Рязанская область</option>
+                    <option value="57">Самарская область</option>
+                    <option value="58">Санкт-Петербург</option>
+                    <option value="59">Саратовская область</option>
+                    <option value="60">Саха (Якутия)</option>
+                    <option value="61">Сахалинская область</option>
+                    <option value="62">Свердловская область</option>
+                    <option value="63">Севастополь</option>
+                    <option value="64">Северная Осетия (Алания)</option>
+                    <option value="65">Смоленская область</option>
+                    <option value="66">Ставропольский край</option>
+                    <option value="67">Тамбовская область</option>
+                    <option value="68">Татарстан</option>
+                    <option value="69">Тверская область</option>
+                    <option value="70">Томская область</option>
+                    <option value="71">Тульская область</option>
+                    <option value="72">Тыва</option>
+                    <option value="73">Тюменская область</option>
+                    <option value="74">Удмуртия</option>
+                    <option value="75">Ульяновская область</option>
+                    <option value="76">Хабаровский край</option>
+                    <option value="77">Хакасия</option>
+                    <option value="78">Ханты-Мансийский АО</option>
+                    <option value="79">Челябинская область</option>
+                    <option value="80">Чеченская Республика</option>
+                    <option value="81">Чувашская Республика</option>
+                    <option value="82">Чукотский АО</option>
+                    <option value="83">Ямало-Ненецкий АО</option>
+                    <option value="84">Ярославская область</option>
+                </select>
+
+            </div>    
+            <div class="calc_group">
+                <p class="calc_title">Количество членов семьи
+                </p>
+                <select name="" id="members" class="calc_select calc_count-members">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>                 
+                </select>
+            </div>
+            <div class="calc_group">
+                <p class="calc_title">Сколько трудоспособных членов семьи
+                </p>
+                <select name="" id="able" class="calc_select calc_members-able">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>                 
+                </select>
+            </div>   
+            <div class="calc_group">
+                <p class="calc_title">Сколько пенсионеров в семье
+                </p>
+                <select name="" id="retiree" class="calc_select calc_count-retiree">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>                 
+                </select>
+            </div>  
+            <div class="calc_group">
+                <p class="calc_title">Сколько детей в семье
+                </p>
+                <select name="" id="children" class="calc_select calc_count-children">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>                 
+                </select>
+            </div> 
+            <div class="calc_group">
+                <p class="calc_title">Совокупный доход семьи
+                </p>
+                <input type="text" class="calc-income calc_input" id="income">
+                
+            </div> 
+           
+                <div class="calc_group lgota_wrapper">
+                    <label for="lgota" id="label_lgota"><input id="lgota" type="checkbox">Наличие льготы или скидки в оплате жилого помещения и коммунальных услуг
+                    </label>
+                    <div class="calc_lgota">
+                            <p class="calc_title">Размер платы за жилое помещение и ком. услуги с учетом льготы (руб.)
+                                </p>
+                                <input type="text" class="calc-comun_lgota calc_input" id="comun_lgota" value="0">
+                                <p class="calc_title">Размер платы за жилое помещение и ком. услуги без учета льготы (руб.)
+                                    </p>
+                                    <input type="text" class="calc-comun_not_lgota calc_input" id="comun_not_lgota" value="0">
+                    </div>
+                </div>
+                <div class="calc_group">
+                        <input type="button" class="calc-btn calc-btn-hacs" id="hacs" value="Рассчитать">
+                    </div> 
+                <div class="calc_group">
+                        <p class="calc_title">Итоги расчета
+                            </p>
+                        <div class="calc-result"></div>
+                    </div> 
+        </div>
+        </div>
+        <script src="main.js"></script>
+</body>
+</html>
